@@ -1,18 +1,23 @@
 const moviesData =[
   {  name :"Trainig Day",
+  id : "1" ,
     category : "action",
     story :"A rookie cop (Ethan Hawke) meets a corrupt Los Angeles narcotics officer " ,
     year : "2001",
     rating:5 ,
     image :"https://is4-ssl.mzstatic.com/image/thumb/Video69/v4/e5/d8/a9/e5d8a921-bafc-d244-9ecc-07ff07433baf/pr_source.lsr/268x0w.png",
+    trailer : "https://www.youtube.com/embed/OWl9p3oFKgg",
 },
 {  name :"Lord of War",
+id : "2",
 category : "action",
 story :"A relentless Interpol agent tracks an arms dealer " ,
 year : "2005",
 rating:4 ,
 image :"https://upload.wikimedia.org/wikipedia/pt/thumb/8/88/Lordofwarposter.jpg/200px-Lordofwarposter.jpg",
+trailer : "https://www.youtube.com/embed/OWl9p3oFKgg",
 }
+
 ,
 {  name :"The Wolf of Wall Street",
 category : "action",

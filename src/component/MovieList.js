@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import Card from './Card'
-import data from '../moviesData'
+import Data from '../moviesData'
 import AddModal from './AddModal'
 
 const MovieList = () => {
-const [movies , setMovies] = useState(data);
+const [movies , setMovies] = useState(Data);
 const [isOpen ,setIsOpen] = useState(false);
 const [inputFilter,setImputFilter]= useState('')
 const [ratingFilter, setRating] =useState(null)
@@ -28,7 +28,7 @@ const filterList = movies.filter(el => ratingFilter !==null ? el.name.toLocaleLo
 </nav>
             <button onClick={()=> setIsOpen(true)}>Add Movie</button>
             <AddModal isOpen={isOpen} closeModal={closeModal} addMovie={addMovie}/>
-        <div style={{display:"flex" , justifyContent:"space-around"}}>
+        <div style={{display:"flex" , flexWrap:"wrap" , justifyContent:"space-between"}}>
             { filterList.map((el,i) =>(
                 <Card key={i} movie={el}/> 
             ) )
